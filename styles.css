@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 95vh;
 }
 .column-container {
   border: 2px solid blue;
@@ -14,12 +14,14 @@
   align-items: center;
   gap: 2rem;
   height: 100%;
+  width: 100%;
 }
 .header {
   border: 2px solid blue;
   font-family: 'Courier New', Courier, monospace;
   position: relative;
-  top: 1em;
+  top: 0;
+  font-size: xx-large;
 }
 .column,
 .column__left,
@@ -29,7 +31,8 @@
   justify-content: center;
   align-items: center;
   border: 2px solid blue;
-  height: 80%;
+  height: 100%;
+  width: 100%;
 }
 .column__left,
 .column__middle,
