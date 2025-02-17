@@ -1,38 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Beauty Edits</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Germania+One&family=Luxurious+Script&family=Monsieur+La+Doulaise&family=Parisienne&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Updock&family=Yeseva+One&display=swap" rel="stylesheet"> </head>
-    <script src="https://kit.fontawesome.com/28a8167d92.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courier+Prime&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/28a8167d92.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
   <body class="main-container">
-    <div class="header-container">
+    <header class="header-container">
       <h1 id="header">The Beauty Edits</h1>
-    </div>
-    <div class="column-container">
-      <div class="column__left">
-        <h2>The Tried & Trusted Edit</h2>
-        <div class="trusted-img" alt="The Cult Trusted edit"></div>
-        <p>Filled with our desert island favourites, this edit is home to the when-in-doubt formulas we rely on. Discover a host of bestselling beauty icons starring dependable skin care heroes to cherished make up must-haves.</p>
-        <i class="fa-solid fa-shop"> BUY</i>
+    </header>
+
+    <section class="column-container">
+      <div class="column">
+        <h2 class="column__title">The Tried & Trusted Edit</h2>
+        <img
+          src="./assets/trusted-edit.png"
+          alt="The Cult Trusted edit"
+          class="column__image"
+        />
+        <p class="column__description">
+          Filled with our desert island favourites, this edit is home to the
+          when-in-doubt formulas we rely on. Discover a host of bestselling
+          beauty icons starring dependable skin care heroes to cherished make up
+          must-haves.
+        </p>
+        <!-- <button class="column__button">
+          <i class="fa-solid fa-shop"></i> BUY
+        </button> -->
       </div>
-        <div class="column__middle">
-          <h2>The Cult Bag of Tricks</h2>
-          <div class="trick-img" alt="The Cult Bag of Tricks"></div> 
-       
-          <p>Shhh... we've got a secret, but it's yours to keep. Experiment with make up marvels and uncover skin-quenching gems curated by us and loved by you. Get ready to indulge your beauty curiosity and meet your new beauty go-tos.</p>
-          <i class="fa-solid fa-shop"> BUY</i>
-        </div>
-      <div class="column__right">
-        <h2>The Prep & Set Edit</h2>
-        <div class="prep-img" alt="The Cult Prep edit"></div>
-        <p>Cue The Prep and Set Edit: a line-up of cherishing skin care essentials and finishing touches to plump, prime and polish.</p>
-        <i class="fa-solid fa-shop"> BUY</i>
+
+      <div class="column">
+        <h2 class="column__title">The Cult Bag of Tricks</h2>
+        <img
+          src="./assets/tricks-edit.png"
+          alt="The Cult Bag of Tricks"
+          class="column__image"
+        />
+        <p class="column__description">
+          Shhh... we've got a secret, but it's yours to keep. Experiment with
+          make up marvels and uncover skin-quenching gems curated by us and
+          loved by you. Get ready to indulge your beauty curiosity and meet your
+          new beauty go-tos.
+        </p>
+        <!-- <button class="column__button">
+          <i class="fa-solid fa-shop"></i> BUY
+        </button> -->
       </div>
-      <div/>
+
+      <div class="column">
+        <h2 class="column__title">The Prep & Set Edit</h2>
+        <img
+          src="./assets/prep-edit.png"
+          alt="The Cult Prep edit"
+          class="column__image"
+        />
+        <p class="column__description">
+          Cue The Prep and Set Edit: a line-up of cherishing skin care
+          essentials and finishing touches to plump, prime and polish.
+        </p>
+        <!-- <button class="column__button">
+          <i class="fa-solid fa-shop"></i> BUY
+        </button> -->
+      </div>
+    </section>
   </body>
 </html>
