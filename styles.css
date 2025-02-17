@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 .main-container {
   display: flex;
@@ -11,90 +11,57 @@
   height: 100vh;
   padding: 1rem;
   box-sizing: border-box;
-  background: #ffffff;
   background: linear-gradient(180deg, #ffffff 35%, #f5f2f7 61%);
 }
 .column-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
   padding: 2rem;
-  gap: 5rem;
-  width: -webkit-fill-available;
-  height: -webkit-fill-available;
+  column-gap: 5rem;
+  grid-auto-rows: minmax(100px, auto);
 }
-#header {
-  position: relative;
-  top: 0;
-  font-size: 55px;
+.header-container {
+  text-align: center;
   width: 100%;
-  font-family: 'Abril Fatface', sans-serif;
-  padding: 2rem;
+  padding-bottom: 1rem;
+}
+.header-container #header {
+  position: relative;
+  font-size: 55px;
+  font-family: "Abril Fatface", sans-serif;
 }
 .column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-.column__left,
-.column__middle,
-.column__right {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
   height: 100%;
-  border-radius: 5%;
+  border-radius: 5rem;
   background-color: white;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  padding: 1rem;
 }
-.column__left:hover,
-.column__middle:hover,
-.column__right:hover {
-  background: #ffffff;
+.column:hover {
   background: linear-gradient(0deg, #ffffff 35%, #f5f2f7 61%);
+}
+.column h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.column p {
+  margin-top: 1rem;
+  font-size: 16px;
+  padding: 1rem;
+  text-align: center;
 }
 .h2 {
   font-size: 16px;
   padding: 1rem;
 }
-.trusted-img,
-.trick-img,
-.prep-img {
-  flex: 0 1 33%;
-  width: 100%;
-}
-.trusted-img {
-  background: url('./assets/trusted-edit.png') no-repeat;
-  background-size: contain;
-  background-position: center;
-  padding: 3rem;
-}
-.trick-img {
-  background: url('./assets/tricks-edit.png') no-repeat;
-  background-size: contain;
-  background-position: center;
-  padding: 3rem;
-}
-.prep-img {
-  background: url('./assets/prep-edit.png') no-repeat;
-  background-size: contain;
-  background-position: center;
-  padding: 3rem;
-}
-.column__left > h2,
-.column__middle > h2,
-.column__right > h2 {
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.column__left > p,
-.column__middle > p,
-.column__right > p {
-  margin-top: 1rem;
-  font-size: 16px;
-  padding: 1rem;
+.column-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
