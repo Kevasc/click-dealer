@@ -63,27 +63,20 @@ body {
   }
 }
 
-.column,
-.middle-column {
+.column {
+  .box-style();
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  font-family: @font-main;
   justify-content: space-around;
   align-items: center;
-
-  .box-style();
   padding: 1rem;
   border: 2px solid transparent;
   border-top: 2px solid rgb(245, 242, 247);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 35%,
-    rgba(245, 242, 247, 1) 61%
-  );
+  background: @bg-gradient;
+
   &:hover {
     border: 2px solid rgb(234, 225, 240);
-    box-shadow: #000000;
   }
 
   h2 {
@@ -120,16 +113,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow: @box-shadow;
 }
 
 .btn,
 .buy-btn {
-  background: linear-gradient(
-    to bottom right,
-    rgb(229, 222, 222) 35%,
-    rgb(226, 218, 231) 61%
-  );
+  .box-style();
+  background: @bg-gradient;
   border: 2px solid transparent;
+  border-top: 2px solid rgb(245, 242, 247);
   border-radius: 12px;
   color: #000000;
   cursor: pointer;
@@ -148,10 +140,9 @@ body {
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-  .box-style();
 }
 .btn:hover,
 .buy-btn:hover {
   border: 2px solid rgb(198, 179, 210);
-  box-shadow: #000000;
+  box-shadow: @box-shadow;
 }
