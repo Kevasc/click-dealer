@@ -1,6 +1,7 @@
+//variables
 @font-main: "Battambang", sans-serif;
 @font-header: "Abril Fatface", sans-serif;
-@card-gradient: linear-gradient(
+@column-gradient: linear-gradient(
   180deg,
   rgba(255, 255, 255, 1) 35%,
   rgba(244, 240, 246, 1) 61%;
@@ -16,6 +17,7 @@
   rgba(17, 17, 26, 0.05) 0px 8px 32px;
 @border-radius: 5rem;
 
+//mixin
 .box-style() {
   border-radius: @border-radius;
   background-color: white;
@@ -54,6 +56,7 @@ body {
 .column-container {
   display: grid;
   gap: 5rem;
+  //grid-template-columns automatically creates as many columns as can fit within the container
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   padding: 2rem;
 }
@@ -69,7 +72,7 @@ body {
     padding-bottom: 3rem;
   }
 }
-
+// box-style() applies all of its rules to the column 
 .column {
   .box-style();
   display: flex;
@@ -80,7 +83,7 @@ body {
   padding: 1rem;
   border: 2px solid transparent;
   border-bottom: 2px solid rgb(245, 242, 247);
-  background: @card-gradient;
+  background: @column-gradient;
 
   &:hover {
     border: 2px solid rgb(234, 225, 240);
@@ -122,7 +125,7 @@ body {
   justify-content: center;
   box-shadow: @box-shadow;
 }
-
+// this button is premade from CSS Scan
 .btn,
 .buy-btn {
   .box-style();
