@@ -8,7 +8,7 @@ html {
   height: 100%;
 }
 body {
-  background: linear-gradient(0deg, #ffffff 35%, #f5f2f7 61%);
+  background: linear-gradient(0deg, #ffffff 35%, rgba(244, 240, 246) 61%);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -50,8 +50,8 @@ body {
   align-items: center;
   padding: 1rem;
   border: 2px solid transparent;
-  border-top: 2px solid #f5f2f7;
-  background: linear-gradient(0deg, #ffffff 35%, #f5f2f7 61%);
+  border-bottom: 2px solid #f5f2f7;
+  background: linear-gradient(180deg, #ffffff 35%, rgba(244, 240, 246) 61%);
 }
 .column:hover {
   border: 2px solid #eae1f0;
@@ -94,9 +94,9 @@ body {
   border-radius: 5rem;
   background-color: white;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-  background: linear-gradient(0deg, #ffffff 35%, #f5f2f7 61%);
+  background: linear-gradient(0deg, #ffffff 35%, rgba(244, 240, 246) 61%);
   border: 2px solid transparent;
-  border-top: 2px solid #f5f2f7;
+  border-top: 2px solid #ede8ed;
   border-radius: 12px;
   color: #000000;
   cursor: pointer;
